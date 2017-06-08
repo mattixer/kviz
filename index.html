@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kviz</title>
+</head>
+<body onload="leek()">
+
+<div id="pocetak">
+    <h1>Kviz</h1>
+    <p class="rim">Dobrodošli u ovaj kviz.</p>
+    <p class="rim">Za svako pitanje imate 15 sekundi.</p>
+    <button type="button" onclick="prvi()">Započni</button>
+</div>
+
+<div id="jedan">
+    <p>2 + 2 = x</p>
+    <form>
+        <input name="pomidori" type="radio">x = 5<br>
+        <input name="pomidori" type="radio" id="vise">x = 4<br>
+        <input name="pomidori" type="radio">x = DVADESET TISUĆA NOVACA!<br>
+        <button type="button" onclick="drugi()">Dalje</button>
+    </form>
+
+</div>
+
+<div id="dva">
+    <p>144 / 12 = x</p>
+    <form>
+        <input name="farad" type="radio">x = 16<br>
+        <input name="farad" type="radio">x = 24<br>
+        <input name="farad" type="radio" id="crv">x = 12<br>
+        <button type="button" onclick="treci()">Dalje</button>
+    </form>
+</div>
+
+<div id="tri">
+    <p>pow(-4)</p>
+    <form>
+        <input name="smrt" type="radio">x = 8<br>
+        <input name="smrt" type="radio">x = -16<br>
+        <input name="smrt" type="radio" id="krv">x = 16<br>
+        <button type="button" onclick="cetvrti()">Dalje</button>
+    </form>
+</div>
+
+<div id="cetiri">
+    <p>prirodni broj</p>
+    <form>
+        <input name="kolac" type="checkbox" id="ska">x = 15<br>
+        <input name="kolac" type="checkbox" id="krim">x = 25.4<br>
+        <input name="kolac" type="checkbox" id="doodle">x = 5<br>
+        <input name="kolac" type="checkbox" id="tim">x = -25<br>
+        <button type="button" onclick="peti()">Dalje</button>
+    </form>
+</div>
+
+<div id="pet">
+    <p>Odgovor na krajnje pitanje života, svemira i svega.</p>
+    <form>
+        <input name="rimokatolici" type="radio">Uspijeh<br>
+        <input name="rimokatolici" type="radio" id="towel">42<br>
+        <input name="rimokatolici" type="radio">Sreća<br>
+        <button type="button" onclick="rezultati()">Dalje</button>
+    </form>
+</div>
+
+<div id="rezultati">
+    <h3>Rezultati:</h3>
+    <p id="mrvica"></p>
+</div>
+
+<script src="java.js"></script>
+</body>
+</html>
